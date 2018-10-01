@@ -159,7 +159,7 @@ def encoder_gat_gate(X, A, num_layers):
         gates.append(gate)
         attention.append(_A)
 
-    return _X, attention, gates
+    return _X
 
 def encoder_gat(X, A, num_layers):
     # X : Atomic Feature, A : Adjacency Matrix
@@ -185,7 +185,7 @@ def encoder_gat(X, A, num_layers):
         _X, _A = graph_attn(A, _X, conv_weight, conv_bias, attn_weight)
         attention.append(_A)
 
-    return _X, attention
+    return _X
 
 def encoder_gcn_gate(X, A, num_layers):
     # X : Atomic Feature, A : Adjacency Matrix
@@ -205,7 +205,7 @@ def encoder_gcn_gate(X, A, num_layers):
         _X, gate= graph_conv_gate(A, _X, conv_weight, conv_bias, i)
         gates.append(gate)
 
-    return _X, gates
+    return _X
 
 def encoder_gcn(X, A, num_layers):
     # X : Atomic Feature, A : Adjacency Matrix
