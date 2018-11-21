@@ -8,7 +8,7 @@ This repository provides implementations introduced in
 ***
 
 # Usage
-We sed several scripts and a 'Harvard Clean Energy Project (CEP)' dataset in https://github.com/HIPS/neural-fingerprint.
+We used several scripts and a 'Harvard Clean Energy Project (CEP)' dataset in https://github.com/HIPS/neural-fingerprint.
 
 ## 1. First, make results and save directories to save output files and save files, respectively.
 
